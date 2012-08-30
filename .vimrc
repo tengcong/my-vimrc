@@ -107,9 +107,7 @@ set hlsearch
 set winminheight=0      " Allow windows to get fully squashed
 set winminwidth=0      " Allow windows to get fully squashed
 
-" Switch between windows, maximizing the current window
-
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
-map <C-H> <C-W>h<C-W>_
-map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>\|
+map <C-L> <C-W>l<C-W>\|
