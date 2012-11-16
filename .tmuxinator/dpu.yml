@@ -1,0 +1,19 @@
+# ~/.tmuxinator/dpu.yml
+# you can make as many tabs as you wish...
+
+project_name: dpu
+project_root: ~/dev/dpu
+#socket_name: foo # Not needed.  Remove to use default socket
+#rvm: ree@dpu
+#pre: sudo /etc/rc.d/mysqld start
+pre: mvim && sudo /usr/local/sbin/nginx
+rvm: ree
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - tail -f log/development.log
+        - guard --no-interactions
+
+  - console: rails c
+  - top: top

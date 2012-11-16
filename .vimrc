@@ -26,9 +26,11 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
+
 Bundle 'mileszs/ack.vim'
 
 Bundle 'corntrace/bufexplorer'
+Bundle 'tomtom/tcomment_vim'
 " 字体
 set guifont=monaco\ 10
 
@@ -109,5 +111,5 @@ set winminwidth=0      " Allow windows to get fully squashed
 
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
-map <C-H> <C-W>h<C-W>\|
-map <C-L> <C-W>l<C-W>\|
+" map <C-H> <C-W>h<C-W>\|
+" map <C-L> <C-W>l<C-W>\|
