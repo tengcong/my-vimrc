@@ -17,20 +17,23 @@ Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hallison/vim-markdown'
-Bundle 'groenewege/vim-less'
-Bundle 'bbommarito/vim-slim'
+
+" Bundle 'kchmck/vim-coffee-script' 这些我貌似用不到暂时
+" Bundle 'hallison/vim-markdown'
+" Bundle 'groenewege/vim-less'
+" Bundle 'bbommarito/vim-slim'
 Bundle 'kien/ctrlp.vim'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 
+" what I use
 Bundle 'mileszs/ack.vim'
 
 Bundle 'corntrace/bufexplorer'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'mattn/zencoding-vim'
 " 字体
 set guifont=monaco\ 10
 
@@ -101,8 +104,8 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 
-"color railscasts
-color peaksea
+color railscasts
+" color peaksea
 
 set hlsearch
 
