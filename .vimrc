@@ -34,6 +34,9 @@ Bundle 'mileszs/ack.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
+Bundle 'lokaltog/vim-powerline'
+" colorschemes
+Bundle 'flazz/vim-colorschemes'
 " 字体
 set guifont=monaco\ 10
 
@@ -104,8 +107,7 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 
-color railscasts
-" color peaksea
+color rdark
 
 set hlsearch
 
