@@ -34,7 +34,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
-Bundle 'lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline'
 " colorschemes
 Bundle 'flazz/vim-colorschemes'
 " 字体
