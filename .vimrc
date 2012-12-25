@@ -37,6 +37,9 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'Lokaltog/vim-powerline'
 " colorschemes
 Bundle 'flazz/vim-colorschemes'
+
+"for javascript
+Bundle "pangloss/vim-javascript"
 " 字体
 set guifont=monaco\ 10
 
@@ -107,7 +110,7 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 
-color rdark
+color bclear
 
 set hlsearch
 
@@ -116,5 +119,6 @@ set winminwidth=0      " Allow windows to get fully squashed
 
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
+let g:Powerline_symbols = 'fancy'
 " map <C-H> <C-W>h<C-W>\|
 " map <C-L> <C-W>l<C-W>\|
