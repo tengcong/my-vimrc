@@ -18,8 +18,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 
-" Bundle 'kchmck/vim-coffee-script' 这些我貌似用不到暂时
-" Bundle 'hallison/vim-markdown'
+Bundle 'kchmck/vim-coffee-script'
+" Bundle 'hallison/vim-markdown'这些我貌似用不到暂时
 " Bundle 'groenewege/vim-less'
 " Bundle 'bbommarito/vim-slim'
 Bundle 'kien/ctrlp.vim'
@@ -122,3 +122,5 @@ map <C-K> <C-W>k<C-W>_
 let g:Powerline_symbols = 'fancy'
 " map <C-H> <C-W>h<C-W>\|
 " map <C-L> <C-W>l<C-W>\|
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
