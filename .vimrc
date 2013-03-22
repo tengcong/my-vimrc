@@ -19,9 +19,9 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 
 Bundle 'kchmck/vim-coffee-script'
-" Bundle 'hallison/vim-markdown'这些我貌似用不到暂时
+" Bundle 'hallison/vim-markdown'
 " Bundle 'groenewege/vim-less'
-" Bundle 'bbommarito/vim-slim'
+Bundle 'gudleik/vim-slim'
 Bundle 'kien/ctrlp.vim'
 
 Bundle 'tpope/vim-fugitive'
@@ -34,13 +34,13 @@ Bundle 'mileszs/ack.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'lokaltog/vim-powerline'
 " colorschemes
 Bundle 'flazz/vim-colorschemes'
-
-"for javascript
-Bundle "pangloss/vim-javascript"
 " 字体
+" javascript
+Bundle 'pangloss/vim-javascript'
+
 set guifont=monaco\ 10
 
 set nobackup
@@ -110,7 +110,7 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 
-color bclear
+color evening_2
 
 set hlsearch
 
@@ -119,8 +119,5 @@ set winminwidth=0      " Allow windows to get fully squashed
 
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
-let g:Powerline_symbols = 'fancy'
 " map <C-H> <C-W>h<C-W>\|
 " map <C-L> <C-W>l<C-W>\|
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
