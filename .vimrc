@@ -34,12 +34,19 @@ Bundle 'mileszs/ack.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
-" Bundle 'lokaltog/vim-powerline'
+Bundle 'lokaltog/vim-powerline'
 " colorschemes
 Bundle 'flazz/vim-colorschemes'
 " 字体
 " javascript
 Bundle 'pangloss/vim-javascript'
+Bundle 'cakebaker/scss-syntax.vim'
+
+" Dash integrate
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+
+Bundle 'nathanaelkane/vim-indent-guides'
 
 set guifont=monaco\ 10
 
@@ -66,8 +73,8 @@ set autoindent
 set mouse=a
 
 "指标符宽度
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 
@@ -110,7 +117,8 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 
-color evening_2
+color solarized
+set background=light
 
 set hlsearch
 
@@ -121,3 +129,19 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 " map <C-H> <C-W>h<C-W>\|
 " map <C-L> <C-W>l<C-W>\|
+let g:Powerline_symbols = 'fancy'
+set cursorline
+
+
+" indent guide color config
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#70CEFF   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#FFE368 ctermbg=4
+
+" hi IndentGuidesOdd  guibg=white   ctermbg=3
+" hi IndentGuidesEven guibg=lightgrey ctermbg=4
+
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 1
+let g:indent_guides_guide_size = 1
